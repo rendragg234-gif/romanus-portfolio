@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#070a12" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f5f7fb" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="dark light" />
+
+    <title>Romanus Marendra Desta — Junior Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio Romanus Marendra Desta, Junior Web Developer asal SMK Bina Mandiri Multimedia (RPL). Menampilkan skills, pengalaman PKL di PT Geoho Tooling Indonesia, proyek, dan sertifikat."
+    />
+    <meta name="author" content="Romanus Marendra Desta" />
+    <meta name="keywords" content="Romanus Marendra Desta, Junior Web Developer, Portfolio, Frontend, Backend, PHP, Node.js, React, SMK RPL" />
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Romanus Marendra Desta" />
+    <meta property="og:title" content="Romanus Marendra Desta — Junior Web Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio Romanus Marendra Desta, Junior Web Developer. Web Development, Frontend, dan Backend."
+    />
+    <meta property="og:image" content="./og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://example.com/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Romanus Marendra Desta — Junior Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio Romanus Marendra Desta, Junior Web Developer. Web Development, Frontend, dan Backend."
+    />
+    <meta name="twitter:image" content="./og-image.png" />
+
+    <script>
+      // Terapkan tema sebelum paint untuk menghindari flash.
+      // Default: GELAP (tema utama). Preferensi pengguna disimpan di localStorage.
+      (function () {
+        try {
+          var stored = localStorage.getItem('rm-theme');
+          var theme = stored === 'light' ? 'light' : 'dark';
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {
+          /* localStorage tidak tersedia: pakai default gelap */
+          document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = 'dark';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="font-family: system-ui, sans-serif; padding: 2rem; text-align: center">
+        JavaScript dinonaktifkan. Aktifkan JavaScript untuk melihat portfolio Romanus Marendra Desta.
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
